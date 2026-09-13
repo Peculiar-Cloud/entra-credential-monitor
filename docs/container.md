@@ -73,6 +73,12 @@ jobs:
 
 ## Tags
 
+The build stages use the builder's native architecture to avoid running Node
+under QEMU. The compiled JavaScript and production dependencies are architecture
+independent; the final Chainguard runtime selects the requested `linux/amd64` or
+`linux/arm64` platform. If a production dependency gains native binaries, its
+installation must target the runtime architecture instead.
+
 - `latest`: latest GitHub release.
 - `main`: latest successful build from `main`.
 - `X.Y.Z`, `X.Y`, and `X`: semantic-version aliases.
