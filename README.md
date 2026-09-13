@@ -1,9 +1,9 @@
 # Entra Credential Monitor
 
-[![CI](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/codeql.yml/badge.svg)](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/codeql.yml)
-[![Container](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/container.yml/badge.svg)](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/actions/workflows/container.yml)
-[![GHCR](https://img.shields.io/badge/image-ghcr.io%2Fpeculiar--cloud%2Fentra--credential--monitor-blue)](https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/pkgs/container/entra-credential-monitor)
+[![CI](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/codeql.yml/badge.svg)](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/codeql.yml)
+[![Container](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/container.yml/badge.svg)](https://github.com/Peculiar-Cloud/entra-credential-monitor/actions/workflows/container.yml)
+[![GHCR](https://img.shields.io/badge/image-ghcr.io%2Fpeculiar--cloud%2Fentra--credential--monitor-blue)](https://github.com/Peculiar-Cloud/entra-credential-monitor/pkgs/container/entra-credential-monitor)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-1A1F6C.svg)](renovate.json)
 [![Peculiar Cloud](https://img.shields.io/badge/by-Peculiar%20Cloud-111827)](https://peculiar.cloud)

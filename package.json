@@ -5,13 +5,13 @@
   "type": "module",
   "main": "dist/run.js",
   "license": "MIT",
-  "homepage": "https://github.com/Peculiar-Cloud/Entra-Credential-Monitor#readme",
+  "homepage": "https://github.com/Peculiar-Cloud/entra-credential-monitor#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Peculiar-Cloud/Entra-Credential-Monitor.git"
+    "url": "git+https://github.com/Peculiar-Cloud/entra-credential-monitor.git"
   },
   "bugs": {
-    "url": "https://github.com/Peculiar-Cloud/Entra-Credential-Monitor/issues"
+    "url": "https://github.com/Peculiar-Cloud/entra-credential-monitor/issues"
   },
   "keywords": [
     "entra-id",
