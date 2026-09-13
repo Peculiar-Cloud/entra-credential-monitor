@@ -3,7 +3,9 @@
 ARG NODE_VERSION=24
 ARG PNPM_VERSION=11.9.0
 
-FROM node:${NODE_VERSION}-alpine AS build-base
+# Build TypeScript and install the pure-JavaScript production dependencies natively.
+# Revisit this platform choice if production dependencies gain native binaries.
+FROM --platform=$BUILDPLATFORM node:${NODE_VERSION}-alpine AS build-base
 WORKDIR /app
 ENV PNPM_HOME=/pnpm
 ENV PATH="${PNPM_HOME}:${PATH}"
