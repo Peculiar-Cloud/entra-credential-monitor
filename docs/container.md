@@ -88,5 +88,5 @@ verify the attestation with:
 
 ```sh
 gh attestation verify oci://ghcr.io/peculiar-cloud/entra-credential-monitor:latest \
-  -R Peculiar-Cloud/Entra-Credential-Monitor
+  -R Peculiar-Cloud/entra-credential-monitor
 ```

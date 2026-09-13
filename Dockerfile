@@ -30,8 +30,8 @@ LABEL org.opencontainers.image.title="Entra Credential Monitor" \
   org.opencontainers.image.description="Scheduled Microsoft Entra ID credential-expiration monitor" \
   org.opencontainers.image.vendor="Peculiar Cloud" \
   org.opencontainers.image.url="https://peculiar.cloud" \
-  org.opencontainers.image.source="https://github.com/Peculiar-Cloud/Entra-Credential-Monitor" \
-  org.opencontainers.image.documentation="https://github.com/Peculiar-Cloud/Entra-Credential-Monitor#readme" \
+  org.opencontainers.image.source="https://github.com/Peculiar-Cloud/entra-credential-monitor" \
+  org.opencontainers.image.documentation="https://github.com/Peculiar-Cloud/entra-credential-monitor#readme" \
   org.opencontainers.image.licenses="MIT"
 
 ENV NODE_ENV=production
