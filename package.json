@@ -22,7 +22,7 @@
     "service-principals",
     "security-monitoring"
   ],
-  "packageManager": "pnpm@11.27.0",
+  "packageManager": "pnpm@11.28.2",
   "scripts": {
     "build": "tsc",
     "start": "node dist/run.js",
@@ -48,14 +48,14 @@
     "date-fns": "^4.4.0",
     "date-fns-tz": "^3.2.0",
     "pino": "^10.3.1",
-    "resend": "^6.28.0",
+    "resend": "^6.30.0",
     "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.13",
-    "@types/node": "^26.5.1",
+    "@biomejs/biome": "^2.5.14",
+    "@types/node": "^26.6.3",
     "@vitest/coverage-v8": "^4.1.11",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^4.1.11"
   }
