@@ -47,5 +47,10 @@ jspm_packages/
 # Docker artifacts
 docker-data/
 
+# Git worktrees nested inside the clone: ours in .worktrees/, Claude Code's in
+# .claude/worktrees/. Each is a full second checkout.
+.worktrees/
+.claude/worktrees/
+
 # Local-only brainstorming specs and implementation plans.
 docs/superpowers/

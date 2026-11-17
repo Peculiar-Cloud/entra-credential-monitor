@@ -1,10 +1,12 @@
-import { defineConfig } from 'vitest/config'
+import { configDefaults, defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
     include: ['src/**/*.test.ts'],
+    // Nested git worktrees are full second checkouts; never collect their copy of the suite.
+    exclude: [...configDefaults.exclude, '.worktrees/**', '.claude/worktrees/**'],
     testTimeout: 10000,
     coverage: {
       provider: 'v8',
