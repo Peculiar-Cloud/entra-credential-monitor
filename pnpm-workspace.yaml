@@ -1,7 +1,9 @@
 allowBuilds:
   esbuild: true
 
-# Keep dependency installs from accepting packages immediately after publish.
-# Renovate waits longer than this before opening PRs, so dependency PRs should
-# not fail CI only because a package is still inside the release-age window.
-minimumReleaseAge: 1440
+# The release-age gate: no version, transitive ones
+# included, installs until it has been public for 7 days. Set here, not only in a machine's
+# own pnpm config, so CI's lockfile check and Renovate's re-locks apply it too; pnpm's
+# default is one day. A same-day security fix needs a version-pinned
+# minimumReleaseAgeExclude entry in its PR.
+minimumReleaseAge: 10080
