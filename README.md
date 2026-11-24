@@ -95,11 +95,11 @@ Create an app registration for the monitor in the tenant you want to scan.
    value immediately.
 5. Add Microsoft Graph application permissions:
 
-| Permission | Purpose |
-| --- | --- |
-| `Application.Read.All` | Read app registrations and their credentials. |
-| `Directory.Read.All` | Read service principals and owners. |
-| `Organization.Read.All` | Read organization display name for reports. |
+| Permission              | Purpose                                       |
+| ----------------------- | --------------------------------------------- |
+| `Application.Read.All`  | Read app registrations and their credentials. |
+| `Directory.Read.All`    | Read service principals and owners.           |
+| `Organization.Read.All` | Read organization display name for reports.   |
 
 Grant admin consent after adding the permissions.
 
@@ -139,26 +139,26 @@ ENTRA_CLIENT_SECRET=client-secret-value
 ENTRA_TENANT_NAME=Example Tenant
 ```
 
-| Variable | Required | Default | Description |
-| --- | --- | --- | --- |
-| `ENTRA_TENANTS` | No | unset | JSON array of tenant configs. Preferred for multi-tenant runs. |
-| `ENTRA_TENANT_ID` | Single-tenant only | unset | Directory tenant ID. |
-| `ENTRA_CLIENT_ID` | Single-tenant only | unset | Monitor app registration client ID. |
-| `ENTRA_CLIENT_SECRET` | Single-tenant only | unset | Monitor app registration client secret. |
-| `ENTRA_TENANT_NAME` | No | `Unnamed Tenant` | Human-readable tenant label. |
-| `RESEND_API_KEY` | Yes | unset | Resend API key. |
-| `SENDER_EMAIL` | Yes | unset | Verified sender address. Also receives error notifications. |
-| `EMAIL_RECIPIENTS` | Yes | unset | Comma-separated report recipients. |
-| `TECHNICAL_CONTACT` | No | unset | Optional contact used in self-monitoring alert text. |
-| `WARNING_DAYS` | No | `30` | Report credentials expiring within this many days. |
-| `SELF_MONITORING_WARNING_DAYS` | No | `60` | Warning window for the monitor app's own credentials. |
-| `EXPIRED_GRACE_DAYS` | No | `90` | Long-expired credentials older than this are collapsed in reports. |
-| `ALWAYS_SEND_REPORT` | No | `false` | Send all-clear reports even when no issues are found. |
-| `REPORT_TIMEZONE` | No | `America/New_York` | IANA time zone used for report dates and times. |
-| `REPORT_BRAND_NAME` | No | `Peculiar Cloud` | Brand name shown in generated report headers and footers. |
-| `REPORT_BRAND_URL` | No | `https://peculiar.cloud` | Brand link used in generated report footers. |
-| `LOG_LEVEL` | No | `info` | Structured log level: `debug`, `info`, `warn`, `error`, or `silent`. |
-| `HEALTHCHECKS_PING_URL` | No | unset | Healthchecks.io UUID or full ping URL. |
+| Variable                       | Required           | Default                  | Description                                                          |
+| ------------------------------ | ------------------ | ------------------------ | -------------------------------------------------------------------- |
+| `ENTRA_TENANTS`                | No                 | unset                    | JSON array of tenant configs. Preferred for multi-tenant runs.       |
+| `ENTRA_TENANT_ID`              | Single-tenant only | unset                    | Directory tenant ID.                                                 |
+| `ENTRA_CLIENT_ID`              | Single-tenant only | unset                    | Monitor app registration client ID.                                  |
+| `ENTRA_CLIENT_SECRET`          | Single-tenant only | unset                    | Monitor app registration client secret.                              |
+| `ENTRA_TENANT_NAME`            | No                 | `Unnamed Tenant`         | Human-readable tenant label.                                         |
+| `RESEND_API_KEY`               | Yes                | unset                    | Resend API key.                                                      |
+| `SENDER_EMAIL`                 | Yes                | unset                    | Verified sender address. Also receives error notifications.          |
+| `EMAIL_RECIPIENTS`             | Yes                | unset                    | Comma-separated report recipients.                                   |
+| `TECHNICAL_CONTACT`            | No                 | unset                    | Optional contact used in self-monitoring alert text.                 |
+| `WARNING_DAYS`                 | No                 | `30`                     | Report credentials expiring within this many days.                   |
+| `SELF_MONITORING_WARNING_DAYS` | No                 | `60`                     | Warning window for the monitor app's own credentials.                |
+| `EXPIRED_GRACE_DAYS`           | No                 | `90`                     | Long-expired credentials older than this are collapsed in reports.   |
+| `ALWAYS_SEND_REPORT`           | No                 | `false`                  | Send all-clear reports even when no issues are found.                |
+| `REPORT_TIMEZONE`              | No                 | `America/New_York`       | IANA time zone used for report dates and times.                      |
+| `REPORT_BRAND_NAME`            | No                 | `Peculiar Cloud`         | Brand name shown in generated report headers and footers.            |
+| `REPORT_BRAND_URL`             | No                 | `https://peculiar.cloud` | Brand link used in generated report footers.                         |
+| `LOG_LEVEL`                    | No                 | `info`                   | Structured log level: `debug`, `info`, `warn`, `error`, or `silent`. |
+| `HEALTHCHECKS_PING_URL`        | No                 | unset                    | Healthchecks.io UUID or full ping URL.                               |
 
 ## Scheduling
 
